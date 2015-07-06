@@ -12,11 +12,11 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
+		<div class="wrap site-info">
 			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'repose' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'repose' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'repose' ), 'repose', '<a href="http://fikrirasy.id" rel="designer">Fikri Rasyid</a>' ); ?>
-		</div><!-- .site-info -->
+			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'repose' ), 'Repose', '<a href="http://fikrirasy.id" rel="designer">Fikri Rasyid</a>' ); ?>
+		</div><!-- .wrap.site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

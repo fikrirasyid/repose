@@ -34,9 +34,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Clearings
 # Widgets
 # Content
+	## Header
     ## Posts and pages
 	## Asides
 	## Comments
+	## Footer
 # Infinite scroll
 # Media
 	## Captions
@@ -271,8 +273,8 @@ select,
 textarea {
   color: #1F1E1E;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 1.5;
 }
 
@@ -345,6 +347,11 @@ html {
 body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */
+}
+
+.wrap {
+  width: 90%;
+  margin: 0 auto;
 }
 
 blockquote, q {
@@ -493,12 +500,6 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
-.main-navigation {
-  clear: both;
-  display: block;
-  float: left;
-  width: 100%;
-}
 .main-navigation ul {
   display: none;
   list-style: none;
@@ -672,6 +673,60 @@ a:hover, a:active {
 # Content
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
+## Header
+--------------------------------------------------------------*/
+#top-navigation {
+  background: #393939;
+}
+#top-navigation .wrap {
+  content: "";
+  display: table;
+  padding: 10px 0;
+}
+#top-navigation a {
+  color: white;
+  text-decoration: none;
+}
+#top-navigation .site-title-top {
+  margin: 0;
+  float: left;
+  font-size: 25px;
+  font-size: 1.5625rem;
+}
+#top-navigation .main-navigation {
+  float: right;
+  font-weight: 300;
+}
+#top-navigation .main-navigation a {
+  padding: 3.5px 7px;
+}
+
+#masthead {
+  background: #393939;
+  border-top: 1px solid #777777;
+  color: white;
+}
+#masthead .wrap {
+  padding: 155px 0;
+}
+#masthead a {
+  color: white;
+  text-decoration: none;
+}
+#masthead .site-title {
+  margin: 0;
+  line-height: 1;
+  font-size: 35px;
+  font-size: 2.1875rem;
+}
+#masthead .site-description {
+  margin: 0;
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+/*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
 .sticky {
@@ -720,6 +775,23 @@ a:hover, a:active {
 
 .bypostauthor {
   display: block;
+}
+
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+#colophon {
+  background: #393939;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+#colophon a {
+  color: white;
+}
+#colophon .wrap {
+  padding: 55px 0;
 }
 
 /*--------------------------------------------------------------

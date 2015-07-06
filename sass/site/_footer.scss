@@ -1,0 +1,14 @@
+#colophon {
+	background: $color__header-bg;
+	color: white;
+	text-align: center;
+	@include font-size( .875 ); // 14
+
+	a {
+		color: white;
+	}
+
+	.wrap {
+		padding: 55px 0;
+	}
+}

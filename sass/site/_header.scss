@@ -1,0 +1,55 @@
+#top-navigation {
+	background: $color__header-bg;
+
+	.wrap{
+		@include clearfix;
+		padding: 10px 0;
+	}
+
+	a {
+		color: white;
+		text-decoration: none;
+	}
+
+	.site-title-top {
+		margin: 0;
+		float: left;
+		@include font-size( 1.5625 ); // 25
+	}
+
+	.main-navigation {
+		float: right;
+		font-weight: 300;
+
+		a {
+			padding: 3.5px 7px;
+		}
+	}
+}
+
+#masthead {
+	background: $color__header-bg;
+	border-top: 1px solid $color__header-border;
+	color: white;
+
+	.wrap {
+		padding: 155px 0;
+	}
+
+	a {
+		color: white;
+		text-decoration: none;
+	}
+
+	.site-title {
+		margin: 0;
+		line-height: 1;
+		@include font-size( 2.1875 ); // 35
+	}
+
+	.site-description {
+		margin: 0;
+		@include font-size( 1.25 ); // 20
+		font-weight: 300;
+	}
+}
