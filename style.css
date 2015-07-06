@@ -269,7 +269,7 @@ button,
 input,
 select,
 textarea {
-  color: #404040;
+  color: #1F1E1E;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 16px;
   font-size: 1rem;
@@ -442,7 +442,7 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-  color: #666;
+  color: #535050;
   border: 1px solid #ccc;
   border-radius: 3px;
 }
@@ -452,7 +452,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 input[type="search"]:focus,
 textarea:focus {
-  color: #111;
+  color: #1F1E1E;
 }
 
 input[type="text"],
@@ -475,13 +475,13 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: royalblue;
+  color: #1F1E1E;
 }
 a:visited {
-  color: purple;
+  color: #1F1E1E;
 }
 a:hover, a:focus, a:active {
-  color: midnightblue;
+  color: #535050;
 }
 a:focus {
   outline: thin dotted;
@@ -587,7 +587,7 @@ a:hover, a:active {
   border-radius: 3px;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
   clip: auto !important;
-  color: #21759b;
+  color: #1F1E1E;
   display: block;
   font-size: 14px;
   font-size: 0.875rem;
