@@ -17,6 +17,12 @@ body {
 	margin: 0 auto;
 }
 
+@media all and ( min-width: 980px ) {
+	.wrap {
+		width: 980px;
+	}
+}
+
 blockquote, q {
 	quotes: "" "";
 

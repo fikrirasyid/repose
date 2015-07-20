@@ -3,7 +3,83 @@
 }
 
 .hentry {
-	margin: 0 0 1.5em;
+	.wrap-content {
+		background: #F7F7F7;
+		padding: 2em 0;
+	}
+
+	.entry-title {
+		margin: 0;
+		// font-weight: 400;
+		@include font-size( 2.25 ); // 36
+
+		a {
+			text-decoration: none;
+		}
+	}
+
+	.entry-meta {
+		> span {
+			display: block;
+			color: $color__text-meta;
+			position: relative;
+			margin-bottom: 5px;
+			@include font-size( .875 ); // 14
+
+			a {
+				text-decoration: none;
+				color: $color__text-meta;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+
+			&:before {
+				font-family: 'Genericons';
+				margin-right: 5px;
+				position: absolute;
+				top: 0;
+				left: -25px;
+				@include font-size( 1 ); // 16
+			}
+		}
+
+		.posted-on {
+			&:before {
+				content: '\f303';
+			}
+		}
+
+		.byline {
+			&:before {
+				content: '\f304';
+			}
+		}
+
+		.cat-links {
+			&:before {
+				content: '\f301';
+			}
+		}
+
+		.tags-links {
+			&:before {
+				content: '\f302';
+			}
+		}
+
+		.comments-link {
+			&:before {
+				content: '\f300';
+			}
+		}
+	}
+
+	.entry-content {
+		@include font-size( 1.5 ); // 24
+		line-height: 1.6;
+	}
 }
 
 .byline,
@@ -16,13 +92,21 @@
 	display: inline;
 }
 
-.page-content,
-.entry-content,
-.entry-summary {
-	margin: 1.5em 0 0;
-}
+@media all and ( min-width: 980px ) {
+	.hentry {
+		.entry-header,
+		.entry-content {
+			width: 630px;
+		}
 
-.page-links {
-	clear: both;
-	margin: 0 0 1.5em;
+		.entry-header {
+			position: relative;
+
+			.entry-meta {
+				position: absolute;
+				left: 113%;
+				width: 200px;
+			}
+		}
+	}
 }
