@@ -8,6 +8,18 @@
 		padding: 2em 0;
 	}
 
+	&.sticky {
+		.wrap-content {
+				background: $color__background-post-sticky;
+				border-bottom: 1px solid $color__border-post-sticky;
+		}
+
+		&:last-of-type {
+			.wrap-content {
+			}
+		}
+	}
+
 	.entry-title {
 		margin: 0;
 		// font-weight: 400;

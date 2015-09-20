@@ -1380,6 +1380,10 @@ a:hover, a:active {
   background: #F7F7F7;
   padding: 2em 0;
 }
+.hentry.sticky .wrap-content {
+  background: #FCFBEC;
+  border-bottom: 1px solid #CCCBB8;
+}
 .hentry .entry-title {
   margin: 0;
   font-size: 36px;
