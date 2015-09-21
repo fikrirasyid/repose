@@ -1,5 +1,68 @@
+#secondary {
+	background: $color__background-sidebar;
+	color: #FFF;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 300px;
+	height: 100%;
+	overflow-y: auto;
+	opacity: .99;
+
+	.sidebar-close {
+		border: none;
+		color: transparent;
+		position: absolute;
+		top:0;
+		right:0;
+		padding: 20px;
+		width: 56px;
+		height: 57px;
+		overflow: hidden;
+		line-height: 1;
+		border-left: 1px solid $color__border-sidebar;
+
+		&:before {
+			font-family: 'Genericons';
+			content: '\f406';
+			display: inline-block;
+			@include font-size( 1 ); // 1
+			color: #FFF;
+		}
+	}
+}
+
+#secondary-wrap {
+	overflow-y: auto;
+}
+
+/* Global widget styling */
 .widget {
-	margin: 0 0 1.5em;
+	padding: 25px;
+	font-weight: 300;
+
+	.widget-title {
+		@include font-size( 1 ); // 16
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		margin: 0 0 1em;
+	}
+
+	a {
+		color: #FFF;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
 
 	/* Make sure select elements fit in widgets. */
 	select {
@@ -7,7 +70,69 @@
 	}
 }
 
+/* Widgets */
+
 /* Search widget. */
-.widget_search .search-submit {
-	display: none;
+.widget_search {
+	padding: 0;
+	border-top: 1px solid $color__border-sidebar;
+	border-bottom: 1px solid $color__border-sidebar;
+
+	.widget-title {
+		display: none;
+	}
+
+	.search-field {
+		display: block;
+		width: 80%;
+		box-sizing: border-box;
+		padding: 14px 20px 15px;
+		border: none;
+		background: transparent;
+		color: #FFF;
+
+		&:focus {
+			outline: 0;
+			color: #FFF;
+		}
+	}
+
+	.search-submit {
+		display: none;
+	}
+}
+
+/* Recent Comments Widget */
+.widget_recent_comments {
+	ul {
+		font-style: italic;
+	}
+
+	a,
+	.comment-author-link {
+		font-style: normal;
+	}
+}
+
+/* RSS Widget */
+.widget_rss {
+	li {
+		margin-bottom: 20px;
+	}
+
+	.rss-date {
+		display: block;
+		@include font-size( .75 ); // 12
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		margin-bottom: 10px;
+	}
+
+	.rssSummary {
+		@include font-size( .875 ); // 14
+	}
+
+	cite {
+		@include font-size( .875 ); // 14
+	}
 }
