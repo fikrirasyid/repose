@@ -7,6 +7,7 @@
 	bottom: 0;
 	width: 300px;
 	height: 100%;
+	margin-right: -300px;
 	overflow-y: auto;
 	opacity: .99;
 	display: none;
@@ -36,6 +37,29 @@
 
 #secondary-wrap {
 	overflow-y: auto;
+}
+
+/* Active secondary state  */
+.active-secondary {
+	overflow: hidden;
+
+	#site-navigation {
+		.menu-toggle {
+			display: none;
+			@include animate();
+		}
+	}
+
+	#secondary {
+		display: block;
+		margin-right: 0;
+		@include animate();
+	}
+
+	#page {
+		margin-right: 300px;
+		@include animate();
+	}
 }
 
 /* Global widget styling */
