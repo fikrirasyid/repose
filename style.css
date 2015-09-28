@@ -1141,6 +1141,9 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
+.main-navigation {
+  position: relative;
+}
 .main-navigation ul {
   display: none;
   list-style: none;
@@ -1177,18 +1180,30 @@ a:hover, a:active {
   display: block;
   text-decoration: none;
 }
+.main-navigation .menu-toggle {
+  position: absolute;
+  top: 50%;
+  right: -80px;
+  margin-top: -16px;
+  color: white;
+  border-color: white;
+  font-size: 14px;
+  font-size: 0.875rem;
+  padding: 5px 10px;
+}
+.main-navigation .menu-toggle:hover {
+  opacity: .8;
+}
+.main-navigation .menu-toggle:active {
+  opacity: .6;
+}
 
 /* Small menu. */
-.menu-toggle,
 .main-navigation.toggled ul {
   display: block;
 }
 
 @media screen and (min-width: 37.5em) {
-  .menu-toggle {
-    display: none;
-  }
-
   .main-navigation ul {
     display: block;
   }
@@ -1308,6 +1323,7 @@ a:hover, a:active {
   height: 100%;
   overflow-y: auto;
   opacity: .99;
+  display: none;
 }
 #secondary .sidebar-close {
   border: none;

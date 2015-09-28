@@ -1,4 +1,5 @@
 .main-navigation {
+	position: relative;
 
 	ul {
 		display: none;
@@ -61,18 +62,33 @@
 	.current-menu-item > a,
 	.current_page_ancestor > a {
 	}
+
+	.menu-toggle {
+		position: absolute;
+		top: 50%;
+		right: -80px;
+		margin-top: -16px;
+		color: white;
+		border-color: white;
+		@include font-size( .875 ); // 14
+		padding: 5px 10px;
+
+		&:hover {
+			opacity: .8;
+		}
+
+		&:active {
+			opacity: .6;
+		}
+	}
 }
 
 /* Small menu. */
-.menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
 }
 
 @media screen and (min-width: 37.5em) {
-	.menu-toggle {
-		display: none;
-	}
 	.main-navigation ul {
 		display: block;
 	}
