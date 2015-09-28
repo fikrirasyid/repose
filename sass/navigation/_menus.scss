@@ -97,20 +97,46 @@
 .comment-navigation,
 .posts-navigation,
 .post-navigation {
+	background: $color__background-post;
+	margin-top: 4em;
 
 	.site-main & {
-		margin: 0 0 1.5em;
 		overflow: hidden;
+	}
+
+	a {
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: bold;
+
+		&:before,
+		&:after {
+			font-family: 'Genericons';
+		}
 	}
 
 	& .nav-previous {
 		float: left;
 		width: 50%;
+
+		a {
+			&:before {
+				content: '\f430';
+				margin-right: 10px;
+			}
+		}
 	}
 
 	& .nav-next {
 		float: right;
 		text-align: right;
 		width: 50%;
+
+		a {
+			&:after {
+				content: '\f429';
+				margin-left: 10px;
+			}
+		}
 	}
 }

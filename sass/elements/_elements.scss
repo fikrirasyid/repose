@@ -12,13 +12,15 @@ body {
 	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
 }
 
-.wrap {
+.wrap,
+.navigation .nav-links {
 	width: 90%;
 	margin: 0 auto;
 }
 
 @media all and ( min-width: 980px ) {
-	.wrap {
+	.wrap,
+	.navigation .nav-links {
 		width: 980px;
 	}
 }

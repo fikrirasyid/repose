@@ -1,10 +1,14 @@
+#primary {
+	padding-bottom: 8em;
+}
+
 .sticky {
 	display: block;
 }
 
 .hentry {
 	.wrap-content {
-		background: #F7F7F7;
+		background: $color__background-post;
 		padding: 2em 0;
 	}
 

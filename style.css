@@ -983,17 +983,19 @@ html {
 }
 
 body {
-  background: #fff;
+  background: #F7F7F7;
   /* Fallback for when there is no custom background color defined. */
 }
 
-.wrap {
+.wrap,
+.navigation .nav-links {
   width: 90%;
   margin: 0 auto;
 }
 
 @media all and (min-width: 980px) {
-  .wrap {
+  .wrap,
+  .navigation .nav-links {
     width: 980px;
   }
 }
@@ -1208,11 +1210,30 @@ a:hover, a:active {
     display: block;
   }
 }
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+  background: #F7F7F7;
+  margin-top: 4em;
+}
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
-  margin: 0 0 1.5em;
   overflow: hidden;
+}
+.comment-navigation a,
+.posts-navigation a,
+.post-navigation a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.comment-navigation a:before, .comment-navigation a:after,
+.posts-navigation a:before,
+.posts-navigation a:after,
+.post-navigation a:before,
+.post-navigation a:after {
+  font-family: 'Genericons';
 }
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
@@ -1220,12 +1241,24 @@ a:hover, a:active {
   float: left;
   width: 50%;
 }
+.comment-navigation .nav-previous a:before,
+.posts-navigation .nav-previous a:before,
+.post-navigation .nav-previous a:before {
+  content: '\f430';
+  margin-right: 10px;
+}
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
   float: right;
   text-align: right;
   width: 50%;
+}
+.comment-navigation .nav-next a:after,
+.posts-navigation .nav-next a:after,
+.post-navigation .nav-next a:after {
+  content: '\f429';
+  margin-left: 10px;
 }
 
 /*--------------------------------------------------------------
@@ -1522,6 +1555,10 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
+#primary {
+  padding-bottom: 8em;
+}
+
 .sticky {
   display: block;
 }
